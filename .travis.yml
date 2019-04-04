@@ -1,0 +1,10 @@
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.2
+      sudo: required
+      language: objective-c
+
+script:
+  - cd NetworkUser
+  - swift test
